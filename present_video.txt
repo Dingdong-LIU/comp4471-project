@@ -1,0 +1,20 @@
+Problem 
+1. Model are hard immigrate to mobile devices. 小模型。 从简单的地方开始，选了人脸识别
+2. Brute force. 首先我们考察了已有的方法（裁剪的简单的cnn），发现有两种思路：
+    1. 第一篇论文的增加cnn的层数，减小kernel
+    2. 结构上调整：depth-wise， column-wise的cnn（mobilenetV1）
+    3. 现在用的是mobilenetV2，（搞清楚bottleneck layer）
+    4. 裁剪mobileNetV2
+3. A little bit different from prior model, mainly and implementation of existing model
+4. The current result: 
+    1. Evaluate the size of the model
+    2. Evaluate the speed of inference 
+    3. Evaluate the accuracy of the model
+    4. Try to migrate to a mobile platform
+
+
+Refactor 
+    1. Aggressively merge the features
+    2. RNN model
+    3. GAN 生成
+
